@@ -1,6 +1,6 @@
 {
   "name": "assemble-jade",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "lib/assemble-jade.js",
   "description": "Assemble engine plugin for processing jade templates.",
   "homepage": "https://github.com/welldan97/assemble-jade",
