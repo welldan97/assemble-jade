@@ -1,6 +1,6 @@
-# Assemble jade [![NPM version](https://badge.fury.io/js/assemble-jade.png)](http://badge.fury.io/js/assemble-jade)
+# Assemble Jade [![NPM version](https://badge.fury.io/js/assemble-jade.png)](http://badge.fury.io/js/assemble-jade)
 
-[Assemble](http://assemble.io/) engine plugin for processing jade templates.
+[Assemble](http://assemble.io/) engine plugin for processing [jade](http://jade-lang.com/) templates.
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ Switch to jade engine in your Gruntfile
 grunt.initConfig({
   assemble: {
     options: {
-      engine: 'swig'
+      engine: 'jade'
     }
   }
 });
@@ -25,6 +25,6 @@ partials, by using this module you'll have to use this jade syntax:
 
 ```jade
 != partial('sidebar')
-``
+```
 
 Thanks
