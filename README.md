@@ -21,9 +21,9 @@ grunt.initConfig({
 ```
 
 Using helpers will be straightforward as calling their names. As for
-partials, by using this module you'll have to use this jade syntax:
+partials, by using this module you'll have to use following jade syntax:
 
-```jade
+```
 != partial('sidebar')
 ```
 
