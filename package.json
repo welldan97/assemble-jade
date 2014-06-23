@@ -1,0 +1,27 @@
+{
+  "name": "assemble-jade",
+  "version": "0.0.0",
+  "main": "lib/assemble-jade.js",
+  "description": "Assemble engine plugin for processing jade templates.",
+  "homepage": "https://github.com/welldan97/assemble-jade",
+  "bugs": "https://github.com/welldan97/assemble-jade/issues",
+  "author": {
+    "name": "Dmitry Yakimov",
+    "email": "welldan97@gmail.com",
+    "url": "welldan97.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/welldan97/assemble-jade"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "keywords": [],
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "jade": "^1.3.1",
+    "lodash": "^2.4.1"
+  }
+}
