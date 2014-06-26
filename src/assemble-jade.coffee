@@ -7,6 +7,8 @@ plugin = ->
   locals = {}
   partials = {}
 
+  locals.pretty = true
+
   locals.partial = (name) ->
     throw "Template #{name} not found" unless _.has(partials, name)
 
@@ -14,11 +16,13 @@ plugin = ->
 
   init = ->
 
+
   compile = (source, options, callback) ->
-    jade.compile source, options, callback
+    allOptions = _.merge({}, options, locals, options: options)
+    jade.compile source, allOptions, callback
 
   render = (templateOrSource, options, callback) ->
-    allOptions = _.merge({}, options, locals)
+    allOptions = _.merge({}, options, locals, options: options)
 
     if _.isString(templateOrSource)
       jade.render(templateOrSource, allOptions, callback)
