@@ -18,11 +18,14 @@ plugin = ->
 
 
   compile = (source, options, callback) ->
-    allOptions = _.merge({}, options, locals, options: options)
+    allOptions = _.merge({}, options, locals)
+    _.merge(allOptions, options: allOptions)
+
     jade.compile source, allOptions, callback
 
   render = (templateOrSource, options, callback) ->
-    allOptions = _.merge({}, options, locals, options: options)
+    allOptions = _.merge({}, options, locals)
+    _.merge(allOptions, options: allOptions)
 
     if _.isString(templateOrSource)
       jade.render(templateOrSource, allOptions, callback)
